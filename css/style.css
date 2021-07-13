@@ -121,7 +121,7 @@ a.header-button {
 
 section#shop-bazzer {
     text-align: center;
-    margin: 3rem 0;
+    margin: 3rem 0 0 0;
     background: #f0f0f0;
     padding: 4rem;
 }
@@ -260,6 +260,93 @@ footer.footer {
     transition: 2s;
 }
 
-@media only screen and (min-width:688px) and (max-width:992px) {}
 
-@media only screen and (min-width:992px) and (max-width:1811px) {}
+/*=============== RESPONSIVE ===============*/
+
+
+/* MOBILE DEVISE  */
+
+@media only screen and (max-width:688px) {
+    #header {
+        justify-content: center;
+    }
+    .header-contact {
+        margin: 7rem 4.125rem 0 1rem;
+    }
+    .header-contact h1 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .header-img {
+        width: 20.563rem;
+        height: 16.198rem;
+        margin: 3rem 1rem 3.866rem 1rem;
+    }
+    .player {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .shop {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    h3.shop-title {
+        margin-right: 0px;
+        font-size: 25px;
+    }
+    .travel-item {
+        margin-left: 0rem;
+        padding: 5px;
+    }
+    h4.travel-red {
+        font-size: 30px;
+    }
+    h4.travel-text {
+        font-size: 29px;
+        width: 298px;
+    }
+}
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    #header {
+        justify-content: center;
+    }
+    .header-contact {
+        margin: 5.938rem 0 -4.38rem 4rem;
+    }
+    .header-img {
+        width: 35.75rem;
+        height: 25.375rem;
+        margin: 110px 0px 86px 0;
+    }
+    .player {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .shop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .travel-item {
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1697px) {
+    #header {
+        justify-content: center;
+    }
+    .header-contact {
+        margin: 14.938rem 0 -4.38rem 4rem;
+    }
+    .header-img {
+        width: 35.75rem;
+        height: 25.375rem;
+        margin: 72px 46px 86px 0;
+    }
+    .player {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .shop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .travel-item {
+        margin-left: 2rem;
+    }
+}
