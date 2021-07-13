@@ -1,0 +1,265 @@
+/*=============== GOOGLE FONT ===============*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/*=============== BASE STYLE ===============*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #6C6C6C;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    color: #FFFFFF;
+}
+
+h2 {
+    color: #18191F;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*=============== HEADER ===============*/
+
+#header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    background-color: #2D25A0;
+}
+
+.header-contact {
+    margin: 12.938rem 0 7.62rem 9rem;
+}
+
+.header-contact h1 {
+    margin-bottom: 2.31rem;
+}
+
+a.header-button {
+    width: 168px;
+    height: 44px;
+    background: #E02C6D;
+    padding: 14px 17px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.header-img {
+    width: 57.75rem;
+    height: 48.375rem;
+    margin: 153px 140px 86px 0;
+}
+
+.header-img:hover {
+    animation: motion 3s infinite linear;
+}
+
+@keyframes motion {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+/*=============== PLAYERS ===============*/
+
+#players {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.player {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.players-item {
+    width: 330px;
+    height: 474px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+}
+
+
+/*=============== SHOP ===============*/
+
+section#shop-bazzer {
+    text-align: center;
+    margin: 3rem 0;
+    background: #f0f0f0;
+    padding: 4rem;
+}
+
+h3.shop-title {
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 0;
+    margin-right: 55px;
+    margin-bottom: 49px;
+    font-size: 30px;
+}
+
+.shops {
+    display: flex;
+    justify-content: center;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.shop-item {
+    width: 329px;
+    height: 474px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    position: relative;
+    transition: 2s;
+}
+
+span.add-cart {
+    background: #2d25a0;
+    padding: 1rem;
+    position: absolute;
+    top: 208px;
+    left: 37px;
+    width: 16rem;
+    opacity: 0;
+    border-radius: 5px;
+    color: white;
+    transition: 2s;
+}
+
+span.add-cart i {
+    padding: 0 13px;
+}
+
+.shop-item:hover .add-cart {
+    opacity: 1;
+}
+
+.shop-item:hover {
+    border: 1px solid#2d25a0;
+    transition: 3s;
+}
+
+.shop-info p {
+    padding: 0 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 12px;
+    line-height: 23px;
+}
+
+p.price {
+    color: #2d25a0;
+    font-weight: 600;
+}
+
+
+/*=============== TRAVEL  ===============*/
+
+#travel {
+    background-image: url(../images/banner_arena_footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    height: 31.063rem;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.travel-item {
+    margin-left: 21rem;
+}
+
+h4.travel-red {
+    background: #0c2c5b;
+    font-size: 35px;
+    padding: 22px 0;
+    color: white;
+    text-transform: uppercase;
+}
+
+h4.travel-text {
+    font-size: 35px;
+    background: #0c2c5b;
+    width: 343px;
+    padding: 21px 0;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+
+/*=============== FOOTER ===============*/
+
+footer.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.footer-contact img {
+    width: 14.239rem;
+    height: 4.214rem;
+}
+
+.footer-contact {
+    text-align: center;
+}
+
+.social-icon i {
+    font-size: 2rem;
+    padding: 1rem;
+    color: #969BAB;
+    transition: 2s;
+}
+
+.social-icon i:hover {
+    color: #2d25a0;
+    transition: 2s;
+}
+
+@media only screen and (min-width:688px) and (max-width:992px) {}
+
+@media only screen and (min-width:992px) and (max-width:1811px) {}
