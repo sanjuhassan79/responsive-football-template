@@ -202,7 +202,6 @@ p.price {
     background-image: url(../images/banner_arena_footer.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     height: 31.063rem;
     background-position: center;
     display: flex;
@@ -305,6 +304,9 @@ footer.footer {
     }
 }
 
+
+/* tablat DEVISE  */
+
 @media only screen and (min-width:688px) and (max-width:992px) {
     #header {
         justify-content: center;
@@ -327,6 +329,9 @@ footer.footer {
         margin-left: 2rem;
     }
 }
+
+
+/* laptop DEVISE  */
 
 @media only screen and (min-width:992px) and (max-width:1697px) {
     #header {
